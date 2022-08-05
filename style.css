@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Saira:wght@300&display=swap');
+/*font-family: 'Allerta Stencil', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Saira:wght@300&display=swap');
+/*font-family: 'Bebas Neue', cursive;*/
+
+body {
+    margin: 0;
+    background: url(/Imagens/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#header {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    grid-column: 1 / 4;
+}
+
+h1 {
+    background-color: red;
+    color: black;
+    margin-left: 35%;
+    margin-right: 40%;
+    animation: h1 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    font-family: 'Allerta Stencil', sans-serif;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#sobre {
+    margin-left: 12%;
+    margin-right: 67%;
+}
+
+.ativo {
+    display: block !important;
+}
+
+@keyframes h1 {
+    0% {
+        letter-spacing: -0.5em;
+        transform: translateZ(-800px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+#contato {
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+
+#contato:hover {
+    animation: contato 0.8s both;
+}
+
+@keyframes contato {
+    0% {
+        transform: skew(0deg 0deg);
+    }
+
+    30% {
+        transform: skew(-25deg -25deg);
+    }
+
+    40% {
+        transform: skew(15deg, 15deg);
+    }
+
+    50% {
+        transform: skew(-15deg, -15deg);
+    }
+
+    65% {
+        transform: skew(5deg, 5deg);
+    }
+
+    75% {
+        transform: skew(-5deg, -5deg);
+    }
+
+    100% {
+        transform: skew(0deg 0deg);
+    }
+}
+
+#topo {
+    display: flex;
+    width: 9.2%;
+    margin-left: 43%;
+    margin-bottom: 10px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#duasColunas {
+    display: flex;
+}
+
+#lateralEsquerda {
+    grid-column: 1 / 2;
+    background-image: linear-gradient(to right, red, red, black);
+    height: 380px;
+    width: 16%;
+    margin-left: 5%;
+    margin-right: 20%;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#lateralEsquerda:hover {
+    background-image: linear-gradient(to right, red, red, green);
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+}
+
+#main {
+    grid-column: 2 / 3;
+    height: 100%;
+    margin-left: -20%;
+    display: flex;
+    width: 75%;
+}
+
+#main div p {
+    display: flex;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 60px;
+    width: 24%;
+    border-color: green;
+    background-image: linear-gradient(to right, blue, purple, blue);
+    margin-left: 1%;
+    text-align: center;
+    border-radius: 20%;
+}
+
+#main #apostas #sitedeapostas {
+    border: rgb(251, 1, 1) 5px solid;
+    height: 310px;
+    width: 330px;
+    margin-left: 126px;
+    margin-top: 10px;
+    justify-content: center;
+    grid-template-columns: 20%;
+    display: inline-grid;
+}
+
+#main #apostas #sitedeapostas:hover {
+    border: rgb(9, 251, 1) 5px solid;
+}
+
+#main #anuncio #anuncio {
+    border: rgb(251, 1, 1) 5px solid;
+    height: 310px;
+    width: 330px;
+    margin-left: 120px;
+    margin-top: 10px;
+    justify-content: center;
+    grid-template-columns: 20%;
+    display: inline-grid;
+}
+
+#main #anuncio #anuncio:hover {
+    border: rgb(9, 251, 1) 5px solid;
+}
+
+#footer {
+    background-image: linear-gradient(to right, red, green, red);
+    grid-column: 1 / 4;
+}
+
+#footer p {
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 25%;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+}
+
+#jovemEmpreendedor {
+    display: flex;
+}
+
+#jovemEmpreendedor #jE {
+    display: inline-grid;
+    grid-template-columns: 20%;
+}
+
+#titulodocurso {
+    color: green;
+    text-align: center;
+    margin-left: -4%;
+}
+
+#janelasdecursos {
+    height: 10%;
+    display: flex; 
+    margin-top: 5px;
+}
+
+#opcaodecurso {
+    border: rgb(251, 1, 1) 5px solid;
+    height: 310px;
+    width: 330px;
+    margin-left: 113px;
+    margin-top: 10px;
+    justify-content: center;
+    grid-template-columns: 20%;
+    display: inline-grid;
+}
+
+#opcaodecurso:hover {
+    border: rgb(9, 251, 1) 5px solid;
+}
+
+#gratuitosepagos {
+    border: 8px solid black;
+    width: 12%;
+    height: 25%;
+    margin-left: 7%;
+    background-image: linear-gradient(to right, red, red, black);
+    display: flex;
+    padding: 7px;
+}
+
+#gratuitocertificadogratuito {
+    border: 8px solid black;
+    width: 21%;
+    margin-left: 6%;
+    background-image: linear-gradient(to right, red, red, black);    
+    display: flex;
+    padding: 7px;
+}
+
+#gratuitocertificadopago {
+    border: 8px solid black;
+    width: 9%;
+    height: 25%;
+    margin-left: 7%;
+    background-image: linear-gradient(to right, red, red, black);
+    display: flex;
+    padding: 7px;
+}
+
+#pagocomcertificado {
+    border: 8px solid black;
+    width: 7%;
+    height: 25%;
+    margin-left: 11%;
+    background-image: linear-gradient(to right, red, red, black);
+    display: flex;  
+    padding: 7px;
+}
+
+#gratuitosepagos div a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    margin-left: 5%;
+}
+
+#gratuitocertificadogratuito div a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    margin-left: 5%;
+}
+
+#gratuitocertificadopago div a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    margin-left: 5%;
+}
+
+#pagocomcertificado div a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    margin-left: 5%;
+}
+
+@media (max-width: 480px){
+    h1 {
+        margin-left: 8px;
+        margin-right: 202px;
+        font-size: 12px;
+    }
+
+    #topo {
+        width: 34%;
+        margin-left: 10%;
+        margin-bottom: -7px;
+    }
+
+    #topo div a #contato {
+        width: 46%;
+        margin-left: 29%;
+        margin-bottom: 1px;
+    }
+
+    #duasColunas {
+        display: block;
+    }
+
+    #lateralEsquerda {
+        height: 107px;
+        width: 53%;
+        margin-left: -2%;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    #main {
+        height: 100%;
+        margin-left: -51%;
+        width: 68%;
+        display: flex;
+    }
+
+    #main div p {
+        font-size: 30px;
+        width: 96%;
+        height: 35%;
+        margin-top: 186px;
+        margin-left: 1%;
+    }
+
+    #main #apostas a {
+        margin-left: 65%;
+    }
+
+    #main #anuncio a {
+        margin-left: 346%;
+    }
+
+    #main #apostas #sitedeapostas {
+        height: 48%;
+        width: 101%;
+        margin-left: 57%;
+    }
+
+    #main #anuncio #anuncio {
+        height: 39%;
+        width: 217%;
+        margin-left: -147%;
+        margin-top: 382%;
+    }
+
+    h2 {
+        margin-left: -46%;
+        margin-right: -5%;
+        margin-top: 5%;
+        font-size: 14px;
+    }
+
+    #jovemEmpreendedor {
+        display: block;
+    }
+
+    #opcaodecurso {
+        margin-left: 1px;
+        height: 85px;
+        width: 93px;
+        margin-top: 0px;
+    }
+
+    #opcaodecurso jE1{
+    display: flex;
+    }
+
+    #janelasdecursos {
+        display: block;
+    }
+
+    #gratuitosepagos {
+        width: 23%;
+        height: 25%;
+        margin-left: 3%;
+        padding: 7px;
+    }
+
+    #gratuitosepagos div a {
+        font-size: 12px;
+    }
+
+    #gratuitocertificadogratuito {
+        width: 32%;
+        margin-left: 3%;
+        margin-top: 10px;
+        padding: 7px;
+    }
+
+    #gratuitocertificadogratuito div a {
+        font-size: 12px;
+    }
+
+    #gratuitocertificadopago {
+        width: 18%;
+        height: 25%;
+        margin-left: 3%;
+        margin-top: 10px;
+        padding: 7px;
+    }
+
+    #gratuitocertificadopago div a {
+        font-size: 12px;
+    }
+
+    #pagocomcertificado {
+        width: 13%;
+        height: 25%;
+        margin-left: 3%;
+        margin-top: 10px;
+        padding: 7px;
+    }
+
+    #pagocomcertificado div a {
+        font-size: 12px;
+    }
+
+    #footer p {
+        width: 45%;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 3%;
+        height: 35px;
+    }
+
+    #footer {
+        width: 51%;
+        margin-left: 0%;
+    }
+
+}
